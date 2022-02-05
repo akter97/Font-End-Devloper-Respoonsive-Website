@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <title>04-02-2022</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <style>
+  body{
+      width: 60%;
+      height: auto;
+      margin: 40px auto;
+      background-color: red;
+      text-align: center;
+    }
+  ul{
+      background-color: black;
+      width: 100%;
+      height: auto;
+      padding: 40px;
+    }
+li{
+  list-style: none;
+  padding: 1px;
+  background: green;
+  border: 1px solid saddlebrown; 
+  margin-top: 10px; 
+  color: aliceblue;
+}
+  </style>
+
+ 
+ </head>
+ <body>
+    <div class="row">
+
+        <div class="col-2">
+          <button type="button" id="add">Add </button>
+          
+        </div>
+      <div class="col-6">
+        <ul>
+          <li >I am Web Designer </li>
+          <li >I am Web Designer </li>
+          <li >I am Web Designer </li>
+          <li >I am Web Designer </li>
+         
+       
+        
+       </ul>
+      </div>
+
+
+      <div class="col-2"> 
+        <button type="button" id="remove">Remove </button>
+     
+      </div>
+    </div>
+     
+
+
+<div class="bg-info" id="ra">
+
+<p class="raj">akter</p>
+
+<button class="btn btn-danger">click</button>
+</div>
+
+
+
+
+
+
+
+
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   
+   <script>
+      $(document).ready(function(){
+          $(".btn").click(function(){
+        $('this').parent().parent().remove();
+      });
+    });
+
+   </script>
+   
+   <script>
+
+
+    $(document).ready(function(){
+      $("#add").click(function(){
+        $("ul").append(" <li>I am Web Designer </li>");
+      });
+
+
+      $("#remove").click(function(){
+        $('li:last').remove();
+      });
+    });
+
+
+ 
+    </script>
+    
+</body>
+</html>

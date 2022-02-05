@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Barlow, sans-serif;
+}
+
+html{
+  width: 100%;
+  height: auto;
+}
+
+
+/* =-------------------------------------------------------------------------------------------------------------------------- */
+
+@media (min-width: 767px) {
+    body {
+      background-color: #87ceeb;
+    } 
+   
+
+  }

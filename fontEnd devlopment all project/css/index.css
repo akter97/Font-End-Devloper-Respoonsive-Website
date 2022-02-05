@@ -1,0 +1,970 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.navbar-section{
+    position: fixed;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(141, 112, 112);
+    z-index: 1; 
+     overflow: hidden;
+    text-transform: uppercase;
+    box-sizing: border-box;
+
+    }
+    .navbar-section .span1{
+        background: #000;
+        padding: 3px 10px;
+        color:rgba(255, 255, 255, 0.904);
+        border-radius: 10%;
+
+    }
+    .navbar-section .github{
+        background: #000;
+        padding: 3px 10px;
+        color:rgba(255, 255, 255, 0.904);
+        border-radius: 10%;
+        text-decoration: none; 
+        float: right;
+        transition: .9s;
+        text-align: end;
+
+    }
+
+    .navbar-section .github:hover{
+       transform: scale(1.07);
+       border: none;
+    }
+
+.logo{
+    display: flex;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(27, 18, 18);
+    
+} 
+
+.navbar-section ul{
+ 
+     
+}
+
+.navbar-section li{
+ 
+    border-bottom: 3px solid rgb(255, 255, 255);
+    transition: .9s; 
+    
+   
+}
+.navbar-section li a{
+
+    font-family: 'Transpass', sans-serif; 
+    transition: .9s;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    transition-duration: 2s;
+   
+}
+
+.navbar-section li a:hover{
+
+    border-bottom: 3px solid red;
+    transform-origin: left;  
+
+   
+}
+
+
+.logo .logo-typing{
+    display: flex;  
+    justify-content: start;
+    align-items: center;
+    font-family: 'Knock Down', sans-serif;
+                                                 
+
+}
+
+
+    /* header-section */
+
+
+    
+    .header-section::before{
+        content: '';
+        box-sizing: border-box;
+        overflow: hidden; 
+    }
+    .header-section{ 
+        width: 100%;
+        height: 600px; 
+        box-sizing: border-box;
+        overflow: hidden;
+        background: url('../img/index/header/cover.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        margin-bottom: -50px;   
+        padding-top: 0px; 
+         
+
+    } 
+    .header-section .hadding{ 
+    width: 100%;
+    height: 100%; 
+    background: linear-gradient(to right, rgba(216, 181, 181, 0.295), rgba(255, 0, 0, 0.5));
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+    
+}
+.header-section .hadding1{ 
+width: 100%;
+height: 100%;  
+display: flex;
+justify-content: center;
+align-items: center; 
+
+
+}
+ 
+.header-section .hadding img{ 
+    width: 100%;
+    height: 100%;
+    
+}
+
+.header-section .hadding h1{ 
+    color: #3E54A3;
+    font-size: 25px;
+    font-weight: 900;
+   
+}
+
+.header-section .hadding p{ 
+    color: #010514;
+    font-size: 20px;
+    font-weight: 500;
+   
+}
+.header-section .hadding h1 span{ 
+     border-bottom: 5px dashed green;
+     line-height: 1.2cm;
+     border-radius: 30%;
+    
+}
+
+.header-section .hadding a{ 
+   text-decoration: none; 
+   border: 3px solid green;
+   width: 200px;
+   margin: 10px auto;
+   height: auto;
+   border-radius: 20%;
+   display: flex;
+   align-items: center;
+    margin-top: 40px;
+   justify-content: center;
+   background: #000;
+   transition: .9s;
+   padding: 10px 0px;
+}
+.header-section .hadding a:hover{ 
+    transform: scale(1.2);
+}
+ 
+/* -------------------------------------- */
+
+
+
+
+/* work section */
+
+
+
+.work-section{
+    width: 100%;
+    height: auto;
+    background: #FFFFFF;
+}
+.work-section h1{
+    padding: 100px 0px 50px 0px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+
+.work-section .card{
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px; 
+    text-align: center;
+}
+
+.work-section img{
+    width: 100px;
+    height: auto;
+    margin:10px auto; 
+}
+
+/* ---------------------------------- */
+
+
+/* LATEST CHALLENGES */
+ .latest-challenges {
+     width:100%;
+     height: auto;
+     margin: auto;
+     background-color: rgb(246, 246, 246);  
+     box-sizing: border-box;
+     overflow: hidden;
+ } 
+ .latest-challenges .chalenges{
+        height: 400px;
+        width: 90%;
+        background: #3E54A3;
+        margin: auto; 
+    }
+    .latest-challenges .chalenges h1{
+        padding: 100px 0 0 0 ;
+        text-align: center;
+        color: #FFFFFF; 
+        font-size: 25px;
+        font-weight: 900;
+}
+.latest-challenges .chalenges-section{
+    width: 80%; 
+    height: auto;
+    margin: auto;   
+    margin-top: -200px;
+    
+}
+
+/* primumsection */
+.latest-challenges .chalenges-section .premium .card{
+  min-width: 90%;
+   height: auto;
+   margin: auto;
+    border: 2px solid rgba(0, 128, 0, 0.575); 
+    border-radius: 20px; 
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+    
+}
+
+ 
+.latest-challenges .chalenges-section .premium .card .imagers{
+    width: 100%; 
+    height: 300px;
+    overflow: hidden;
+    margin: auto;    
+    transition: 1.2s;
+    
+}
+
+
+.latest-challenges .chalenges-section .premium .card .imagers img{
+    width: 100%; 
+    height: 100%;
+    margin: auto;    
+    transition: 1.2s;
+    
+}
+
+.latest-challenges .chalenges-section .premium .card img:hover{
+    transform: scale(1.2);
+   
+}
+
+
+.latest-challenges .chalenges-section .premium .card .new{
+    position: absolute;
+    right: 45%;
+    top: 5%;
+    text-decoration: none; 
+    color: #fff;
+    text-transform: uppercase;
+    background: #ED2C49;
+    padding: 5px 15px;
+    border-radius: 30%;
+    font-weight: 500;
+    font-size: 10px;
+}
+.latest-challenges .chalenges-section .premium .card .premium{
+     position: absolute;
+     right: 5%;
+     top: 5%;   
+      text-decoration: none; 
+     color: #fff;
+     text-transform: uppercase;
+     background: #3E54A3;
+     padding: 5px 15px;
+     border-radius: 30%;
+     font-weight: 600;
+     font-size: 10px;
+   
+}
+.latest-challenges .chalenges-section .premium .card a{
+    text-decoration: none;
+    font-size: 20px;
+    color:rgb(27, 18, 18);
+    font-weight: 600;
+    transition: 1.5s;
+    transition-duration: 1s;
+}
+.latest-challenges .chalenges-section .premium .card a:hover{
+    text-decoration: underline;
+    font-size: 20px;
+    color:rgb(243, 16, 16);
+    font-weight: 600;
+}
+
+
+.latest-challenges .chalenges-section .premium .card .button{  
+   display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+
+.latest-challenges .chalenges-section .premium .card .button p:nth-child(1){ 
+ 
+    padding: 5px 5px; 
+    color: #6ABECD;
+    font-weight: 700;
+ 
+   }
+   
+
+   .latest-challenges .chalenges-section .premium .card .button p:nth-child(2){ 
+ 
+    padding: 5px 5px; 
+    color: #3E54A3;
+    font-weight: 700;
+ 
+   }
+   
+   .latest-challenges .chalenges-section .premium .card .button p:nth-child(3){ 
+   
+    color: #AAD742;
+    font-weight: 700; ;
+    border-radius: 10px;
+    border: 3px solid #AAD742;
+    overflow: hidden;
+    padding: 0px 0px 0px 0px ;
+ 
+   }
+   
+
+   .latest-challenges .chalenges-section .premium .card .button p:nth-child(3) span{ 
+  
+    color: #ffffff;
+    font-weight: 700;
+    background: #AAD742; 
+    border-left: 3px solid #AAD742;
+    padding: 40px 10px;
+    
+    border-radius: 10px;
+ 
+   }
+
+
+
+   
+/* free section */ 
+.latest-challenges .chalenges-section .free .card{
+    min-width: 90%;
+     height: auto;
+     margin: auto;
+      border: 2px solid rgba(0, 128, 0, 0.575); 
+      border-radius: 20px; 
+      overflow: hidden;
+      position: relative;
+      margin-bottom: 30px;
+      
+  }
+  
+   
+  .latest-challenges .chalenges-section .free .card .imagers{
+      width: 100%; 
+      height: 300px;
+      overflow: hidden;
+      margin: auto;    
+      transition: 1.2s;
+      
+  }
+  
+  
+  .latest-challenges .chalenges-section .free .card .imagers img{
+      width: 100%; 
+      height: 100%;
+      margin: auto;    
+      transition: 1.2s;
+      
+  }
+  
+  .latest-challenges .chalenges-section .free .card img:hover{
+      transform: scale(1.2);
+     
+  } 
+  .latest-challenges .chalenges-section .free .card .free{
+       position: absolute;
+       right: 5%;
+       top: 5%;   
+        text-decoration: none; 
+       color: #fff;
+       text-transform: uppercase;
+       background: #b0b5c9;
+       padding: 5px 15px;
+       border-radius: 30%;
+       font-weight: 600;
+       font-size: 10px;
+     
+  }
+  .latest-challenges .chalenges-section .free .card a{
+      text-decoration: none;
+      font-size: 20px;
+      color:rgb(27, 18, 18);
+      font-weight: 600;
+      transition: 1.5s;
+      transition-duration: 1s;
+  }
+  .latest-challenges .chalenges-section .free .card a:hover{
+      text-decoration: underline;
+      font-size: 20px;
+      color:rgb(243, 16, 16);
+      font-weight: 600;
+  }
+  
+  
+  .latest-challenges .chalenges-section .free .card .button{  
+     display: flex;
+    justify-content: space-between;
+    padding: 5px;
+  }
+  
+  
+  .latest-challenges .chalenges-section .ftee .card .button p:nth-child(1){ 
+   
+      padding: 5px 5px; 
+      color: #6ABECD;
+      font-weight: 700;
+   
+     }
+     
+  
+     .latest-challenges .chalenges-section .free .card .button p:nth-child(2){ 
+   
+      padding: 5px 5px; 
+      color: #3E54A3;
+      font-weight: 700;
+   
+     }
+     
+     .latest-challenges .chalenges-section .free .card .button p:nth-child(3){ 
+     
+      color: #AAD742;
+      font-weight: 700; ;
+      border-radius: 10px;
+      border: 3px solid #AAD742;
+      overflow: hidden;
+      padding: 0px 0px 0px 0px ;
+   
+     }
+     
+  
+     .latest-challenges .chalenges-section .free .card .button p:nth-child(3) span{ 
+    
+      color: #ffffff;
+      font-weight: 700;
+      background: #AAD742; 
+      border-left: 3px solid #AAD742;
+      padding: 40px 10px;
+      
+      border-radius: 10px;
+   
+     }
+     
+
+
+
+/* primumsection---01 */
+.latest-challenges .chalenges-section .premium-01 .card{
+    min-width: 90%;
+     height: auto;
+     margin: auto;
+      border: 2px solid rgba(0, 128, 0, 0.575); 
+      border-radius: 20px; 
+      overflow: hidden;
+      position: relative;
+      margin-bottom: 30px;
+      
+  }
+  
+   
+  .latest-challenges .chalenges-section .premium-01 .card .imagers{
+      width: 100%; 
+      height: 300px;
+      overflow: hidden;
+      margin: auto;    
+      transition: 1.2s;
+      
+  }
+  
+  
+  .latest-challenges .chalenges-section .premium-01 .card .imagers img{
+      width: 100%; 
+      height: 100%;
+      margin: auto;    
+      transition: 1.2s;
+      
+  }
+  
+  .latest-challenges .chalenges-section .premium-01 .card img:hover{
+      transform: scale(1.2);
+     
+  }
+  
+  
+  .latest-challenges .chalenges-section .premium-01 .card .new{
+      position: absolute;
+      right: 45%;
+      top: 5%;
+      text-decoration: none; 
+      color: #fff;
+      text-transform: uppercase;
+      background: #ED2C49;
+      padding: 5px 15px;
+      border-radius: 30%;
+      font-weight: 500;
+      font-size: 10px;
+  }
+  .latest-challenges .chalenges-section .premium-01 .card .premium-01{
+       position: absolute;
+       right: 5%;
+       top: 5%;   
+        text-decoration: none; 
+       color: #fff;
+       text-transform: uppercase;
+       background: #3E54A3;
+       padding: 5px 15px;
+       border-radius: 30%;
+       font-weight: 600;
+       font-size: 10px;
+     
+  }
+  .latest-challenges .chalenges-section .premium-01 .card a{
+      text-decoration: none;
+      font-size: 20px;
+      color:rgb(27, 18, 18);
+      font-weight: 600;
+      transition: 1.5s;
+      transition-duration: 1s;
+  }
+  .latest-challenges .chalenges-section .premium-01 .card a:hover{
+      text-decoration: underline;
+      font-size: 20px;
+      color:rgb(243, 16, 16);
+      font-weight: 600;
+  }
+  
+  
+  .latest-challenges .chalenges-section .premium-01 .card .button{  
+     display: flex;
+    justify-content: space-between;
+    padding: 5px;
+  }
+  
+  
+  .latest-challenges .chalenges-section .premium-01 .card .button p:nth-child(1){ 
+   
+      padding: 5px 5px; 
+      color: #6ABECD;
+      font-weight: 700;
+   
+     }
+     
+  
+     .latest-challenges .chalenges-section .premium-01 .card .button p:nth-child(2){ 
+   
+      padding: 5px 5px; 
+      color: #3E54A3;
+      font-weight: 700;
+   
+     }
+     .latest-challenges .chalenges-section .premium-01 .card .button p:nth-child(3){ 
+   
+        padding: 5px 5px; 
+        color: #080a13;
+        font-weight: 900;
+        font-size: 12px;
+     
+       }
+     
+     .latest-challenges .chalenges-section .premium-01 .card .button p:nth-child(4){ 
+     
+      color: #ff0202;
+      font-weight: 900; ;
+      border-radius: 10px;
+      border: 3px solid #ff0202;
+      overflow: hidden;
+      padding: 0px 0px 0px 0px ;
+   
+      font-size: 12px;
+     }
+     
+  
+     .latest-challenges .chalenges-section .premium-01 .card .button p:nth-child(4) span{ 
+    
+      color: #ffffff;
+      font-weight: 700;
+      background: #fd4108; 
+      border-left: 3px solid #ff0202;
+      padding: 40px 10px;
+      
+      border-radius: 10px;
+   
+     }
+       
+
+
+
+     .ViewallChallenges{
+         text-decoration: none;
+         text-align: center; 
+         font-weight: 500;
+         transition: .5s; 
+         margin-bottom: 30px; 
+         font-size: 15px;
+         color: #010514;
+     }
+     .ViewallChallenges:hover{   
+        font-weight: 700; 
+        text-decoration: underline; 
+        color: #010514;
+    }
+
+     /* end chellange section */
+
+
+
+
+
+/* slack section */
+ .slack-section{
+    background: url('../img/index/slack/background.jfif');
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 50px 0;
+    color: white;
+ }
+
+ .slack-section img{
+     width: 350px;
+     height: auto;
+     margin: auto;
+ }
+ .slack-section h3{
+     font-weight: 900;
+     padding: 30px 0;
+     font-size: 15px;
+}
+.slack-section p{
+    font-weight: 400; 
+    font-size: 25px;
+}
+
+.slack-section input[type="email"]{
+    width: 100%; 
+    height: auto;
+    margin: auto;
+    font-size: 20px;
+    border: 2px solid white;
+    background: none;
+    color: #000; 
+    
+    margin-top: 10px;
+}
+.slack-section input::placeholder{
+   margin-left: 20px;
+    font-size: 20px; 
+    background: none;
+    color: #000; 
+}
+
+
+.slack-section input[type="submit"]{
+    width: 50%; 
+    height: auto;
+    margin: auto;
+    font-size: 20px;
+    background: #f5740a; 
+    color: rgb(63, 13, 241); 
+    border-radius: 30% 0% 30% 0%;
+    margin-top: 10px;
+    transition: .5s;
+    padding: 10px;
+}
+
+
+.slack-section input[type="submit"]:hover{ 
+    font-size: 20px;
+    background: #1f1309; 
+    color: rgb(112, 86, 204); 
+    border-radius: 30% 0% 30% 0%;
+    margin-top: 10px;
+}
+
+
+
+ /*  submit section  */
+ .subscribe-section{
+    width: 100%;
+    background:  #FAFAFA;
+    padding: 100px 0; 
+    line-height: 1cm;
+}
+.subscribe-section h3{
+    font-size: 15px;
+    font-weight: 600;
+    padding: 5px;
+}
+.subscribe-section p{
+    font-size: 20px;
+    font-weight: 300;
+    padding: 5px;
+}
+
+.subscribe-section label{
+    font-size: 15px;
+    font-weight: 300;
+    padding: 5px;
+}
+
+.subscribe-section input[type="email"]{
+    width: 100%; 
+    height: auto;
+    margin: auto;
+    font-size: 20px;
+    border: 2px solid rgb(224, 20, 20);
+    background: none;
+    color: #000; 
+    
+    margin-top: 10px;
+}
+.subscribe-section input::placeholder{
+   margin-left: 20px;
+    font-size: 20px; 
+    background: none;
+    color: #000; 
+}
+
+
+.subscribe-section input[type="submit"]{
+    max-width: 100%; 
+    height: auto;
+    margin: auto;
+    font-size: 20px;
+    background: #f5740a; 
+    color: rgb(63, 13, 241); 
+    border-radius: 30% 0% 30% 0%;
+    margin-top: 10px;
+    transition: .5s;
+    padding: 5px;
+}
+
+
+.subscribe-section input[type="submit"]:hover{ 
+     
+    background: #1f1309; 
+    color: rgb(112, 86, 204);   
+}
+
+
+.subscribe-section img{
+    width: 100%;
+    height: 200px;
+}
+
+
+/* end subscribe  */
+
+
+/* fontend-mentor */
+.fontend-mentor{
+    width: 100%;
+    background: #FFFFFF;
+    height: auto;
+    padding: 50px 0;
+    border-top: 2px solid rgb(82, 70, 70);
+    border-bottom: 2px solid rgb(82, 70, 70);
+}
+
+.fontend-mentor h3{
+    font-size: 15px;
+    font-weight: 700;
+    color: #000;
+}
+
+
+ 
+
+.fontend-mentor p{
+    font-size: 15px;
+    font-weight: 300;
+    color: rgb(22, 16, 16);
+    padding: 20px 0;
+}
+
+.fontend-mentor li{
+    list-style: none;
+}
+.fontend-mentor a{
+     color: #ED2C49;
+}
+
+.fontend-mentor i{
+     border: 2px solid #1CA0F2;
+     padding: 10px;
+     border-radius: 50%;
+     font-size: 30px;
+     color: #1CA0F2;
+     transition: .9s;
+     transition-duration: 3s;  
+}
+
+.fontend-mentor i:hover{
+    border: 2px solid #1CA0F2;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #ffffff;
+    transform: rotate(380deg);
+    transform: scale(.9s);
+    background: #1CA0F2;
+}
+
+ /* end  fontend mentor */
+
+
+/* footer */
+
+footer{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 10px;
+    font-weight: 100;
+    color: #000;
+}
+
+
+
+footer li{
+    list-style: none;
+    display: inline-block;
+    float: right;
+    padding: 0 3px;
+     
+}
+footer a{
+    font-size: 10px;
+    font-weight: 100;
+    color: #000;
+}
+
+
+
+ 
+/* 
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+   <p>2022 @Copy Right  Akter</p> 
+      </div>
+      <div class="col-8">
+        <ul>
+          <li><a href=" #"> Contact Us</a></li> 
+          <li><a href=" #"> Slack</a></li> 
+          <li><a href=" #"> FAQs</a></li> 
+          <li><a href=" #"> Blog</a></li> 
+      </ul>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =-------------------------------------------------------------------------------------------------------------------------- */
+
+@media (max-width: 767px) {
+    body {
+      background-color: #87ceeb;
+    }
+    .navbar-section ul{
+ 
+        border-bottom: 3px solid rgb(255, 255, 255);
+        transition: .9s;
+        display: inline-block;
+        float: right;
+        
+       
+    }
+    
+.navbar-section li a:hover{
+
+    border-bottom: 0px solid red;
+    transform-origin: left;
+    color: rgb(27, 18, 18);  
+
+   
+}
+
+
+    .logo .logo-typing{
+         display: none;
+    
+    }
+    
+    .navbar-section .github{
+       display: none; 
+    }
+
+    .ddisplay-none{
+        display: none;
+    }
+    .md-none{
+        display: none;
+    }
+
+  }
