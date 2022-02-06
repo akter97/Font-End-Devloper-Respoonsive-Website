@@ -1,342 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-
-
-
-
-  
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Largest Car Companies </title>
-
-    <!-- css link -->
-    <link rel="stylesheet" href="css/style.css">
-
-    <link href="img/favicone/a.jfif" rel="icon" type="image/x-icon" /> 
-
-
-
-    <!-- font awasome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-
-<!-- font family -->
-    <link href="http://fonts.cdnfonts.com/css/sunnyside" rel="stylesheet">
-    <!-- bootstrap Linkup -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-
-
-   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> 
-
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-  
- 
-<style>
-  .navbar-section{
-  position: fixed;
-  width: 100%;
-  background: #000;
-  z-index: 1;
-  }
-</style>
-
-
+    <title>Document</title>
+    <script type = "text/javascript" 
+         src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+      </script>
 </head>
- 
- 
-<!-- =========body section============== -->
-<body >
-
-   
-
-
-
-  <div>
-
-
-
-
-
-   <!-- navigation bar -->
-     <div class="navbar-section"style="ooverflow-hidden; box-sizing: border-box">
-   <nav class="navbar navbar-expand-sm ms-auto navbar-dark "> 
+<body>
+    <div id="error" style="color: red;"></div>
+    <input type="hidden" id="item_counter" value="1">
+    <table id="tbl_test" border="1px solid">
+        <thead>
+            <tr>
+                <th>Quantity</th>
+                <th>Unit Price</th>
+                <th>Price</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="test">
+        
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2"><span id="total_qty">Total Price:</span></td>
+                <td><span id="total_price"></span></td>
+            </tr>
+        </tfoot>
+    </table>
+     <script type = "text/javascript" language = "javascript">
        
-<div class="container">
-  <a href="index.html" class="navbar-brand">Largest Car <span style="background: #FEFEFE; padding: 5px 10px; border-radius: 0px 0px 0px 120px; color: red; font-weight: 900;"> Companies</span></a>
-
-        <!--         responsive--> 
-      <button class="navbar-toggler text-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-          <span class="text-light p-2"><i class="fas fa-bars"></i></span>
-      </button>
-
-      
-
-
-      <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        
-        <ul class="navbar-nav  ms-auto  mt-2 " id="nav"> 
-            <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="catagori.html">Categories</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="product.html">Product</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="card.html">Cart</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          
- 
+        $(document).ready(function() {
+            var item_counter = 1;
+            var html = '<tr><td><input type="text" id="one' + item_counter + '" class="qty" onkeyup="po_calculation('+item_counter+')"></td><td><input type="text" id="two' + item_counter + '" onkeyup="po_calculation('+item_counter+')"></td><td><input type="text" id="price' + item_counter + '" class="price" readonly></td><td><button type="button" class="add">Add (+)</button><td><button type="button" class="delete">Delete (-)</button></td></td></tr>'
+            $("#test").html(html);
+            total_cal();
+            $("#item_counter").val(item_counter);
+        });
            
-         </ul>
-         <form class="d-flex">
-          <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-secondary" type="submit"><i class="fas fa-search"></i></button> 
-        </form>
-        <button class="btn btn-primary ms-3"><i class="fas fa-shopping-cart"></i>  Cart<span class="badge bg-info ms-2">2</span> </button>
-     </div>
-  
-  </nav> 
-</div>
-<!-- ------------------------------------ -->
-<div class="container-fluid">
-  <!-- banner -->
-  <div class="row justify-content-center py-5" style="background-color: #13e2b5d5; color:rgb(0, 0, 0)">
-      <div class="col-md-10 text-center py-5 ">
-          <h1>E-COMMERS CATEGORY</h1>
-          <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum fugit soluta expedita aperiam quia, laudantium consequuntur hic commodi recusandae atque minima! Animi enim architecto aliquid vel reiciendis eveniet quo quisquam quasi incidunt ea ipsa illo, inventore aspernatur veritatis accusamus. Culpa deleniti totam amet sit.</P>
-      </div>
-  </div>
-<!-- -------------------------------------------------------------------- -->
-
-
-<div class="row justify-content-center mt-4">
-  <div class="col-md-11" style="background-color: #f1e1e1;">
-      <ul class="nav bg">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home <span>/</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Category <span>/</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Sub-category</a>
-          </li>
-        </ul>
-  </div>
-</div>
-<!-- -------------------------------- -->
-
-
-<div class="row justify-content-center">
-  <div class="col-md-11">
-    <div class="row">
-      <div class="col-md-3">
-
-        <div class="row mt-3">
-          <div class="col-md-12">
-            <ul class="list-group border">
-              <h5 class="bg-info py-2 my-0 text-danger ps-3"><i class="fas fa-shopping-cart"></i> CATEGORIES</h5>
-              <li class="list-group-item">Cras justo odio</li>
-              <li class="list-group-item">Dapibus as facilici in</li>
-              <li class="list-group-item">Morbi neo lesis</li>
-              <li class="list-group-item">_Porta as contectual as</li>
-              <li class="list-group-item">Vestubuloms as meros</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row mt-3">
-          <div class="col-md-12 pb-5">
-            <div class="card" style="width: 100%;">
-              <h5 class="bg-success py-2 text-white ps-3"> LAST PRODUCT</h5>
-              <img src="car/04.jfif" class="card-img-top w-100 img-thumbnail" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="col-md-9">
-
-        <div class="row mt-3">
-
-          <div class="col-md-4">
-            <div class="col-md-12">
-              <div class="card" style="width: 100%;">
-                <img src="car/5.jpg" class="card-img-top w-100 img-thumbnail" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Cars bmw</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-danger d-inline-block">599.9$</a>
-                  <a href="#" class="btn btn-warning d-inline-block float-end">Add to cart</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="col-md-12">
-              <div class="card" style="width: 100%;">
-                <img src="car/01.jfif" class="card-img-top w-100 img-thumbnail" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Cars bmw</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-danger d-inline-block">599.9$</a>
-                  <a href="#" class="btn btn-warning d-inline-block float-end">Add to cart</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col-md-4">
-            <div class="col-md-12">
-              <div class="card" style="width: 100%;">
-                <img src="car/02.jfif" class="card-img-top w-100 img-thumbnail" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Cars bmw</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-danger d-inline-block">599.9$</a>
-                  <a href="#" class="btn btn-warning d-inline-block float-end">Add to cart</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-
-          <div class="col-md-4">
-            <div class="col-md-12">
-              <div class="card" style="width: 100%;">
-                <img src="car/03.jfif" class="card-img-top w-100 img-thumbnail" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Cars bmw</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-danger d-inline-block">599.9$</a>
-                  <a href="#" class="btn btn-warning d-inline-block float-end">Add to cart</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-
-          <div class="col-md-4">
-            <div class="col-md-12">
-              <div class="card" style="width: 100%;">
-                <img src="car/04.jfif" class="card-img-top w-100 img-thumbnail" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Cars bmw</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-danger d-inline-block">599.9$</a>
-                  <a href="#" class="btn btn-warning d-inline-block float-end">Add to cart</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-          <div class="col-md-4">
-            <div class="col-md-12">
-              <div class="card" style="width: 100%;">
-                <img src="car/03.jfif" class="card-img-top w-100 img-thumbnail" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Cars Buss</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-danger d-inline-block">599.9$</a>
-                  <a href="#" class="btn btn-warning d-inline-block float-end">Add to cart</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-
-
-           </div> 
-        </div>
- 
-
-
-
-
-        </div>
-
-      </div>
-
-    </div> 
-
-
-<!-- fotter -->
-<div class="row">
-  <div class="col-md-12">
-    <div class="row justify-content-around py-3">
-      <div class="col-md-4 text-center">
-        <ul class=" nav flex-column ">
-          <li class="nav-item"><a href="#" class="nav-link"> link </a></li>
-          <li class="nav-item"><a href="#" class="nav-link"> link </a></li>
-          <li class="nav-item"><a href="#" class="nav-link"> link </a></li>
-          <li class="nav-item"><a href="#" class="nav-link"> link </a></li>
-        </ul>
-      </div>
-      <div class="col-md-4 text-center">
-        <ul class=" nav flex-column ">
-          <li class="nav-item"><a href="#" class="nav-link"> link </a></li>
-          <li class="nav-item"><a href="#" class="nav-link"> link </a></li>
-          <li class="nav-item"><a href="#" class="nav-link"> link </a></li>
-          <li class="nav-item"><a href="#" class="nav-link"> link </a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="row justify-content-center">
-      <div class="col-md-11">
+        $('#test').on('click', '.add', function() {
+            var item_counter = parseInt($("#item_counter").val());
+            item_counter += 1;
+            $("#item_counter").val(item_counter);
+            var html = '<tr><td><input type="text" id="one' + item_counter + '" class="qty" onkeyup="po_calculation('+item_counter+')"></td><td><input type="text" id="two' + item_counter + '" onkeyup="po_calculation('+item_counter+')"></td><td><input type="text" id="price' + item_counter + '" class="price" readonly></td><td><button type="button" class="delete">Delete (-)</button></td></tr>'
+            $("#test").append(html);
+            total_cal();
+        });
         
-        <p class="d-inline-block float-start">created with bootstra By Akter Ujjaman Raj</p>
-        <p class="d-inline-block float-end"><a href="#">Back to the top</a></p>
-      </div>
-    </div>
-  </div>
-</div>
+        $('#test').on('click', '.delete', function() {
+            // var rowCount = $('#tbl_test >tbody >tr').length;
+            // if (rowCount > 1) {
+                $(this).parent().parent().remove();
+                //$(this).parent().parent().css({"color": "red", "border": "2px solid red"});
+                po_calculation();
+            // } else {
+            //     $("#error").text('one row left atleast');
+            // }
+        });
 
-</div>
+          //      function removeTr(e){
+        //      var e = e.parentNode.parentNode;
+        //       e.parentNode.removeChild(e);
+        // }
 
- 
-</div>
-</div> 
- <!-- ------------------all js file-------- -->
- <!-- jQuery -->
- <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
- <!-- js -->
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
- 
+       
+
+        //item calculation
+        function po_calculation(sl){
+
+        var qty = $("#one"+sl).val();
+
+        var unit_price = $("#two"+sl).val();
+
+        var po_price = unit_price*qty;
+
+        var price = $("#price"+sl).val(po_price);
+        total_cal();
+    }
+
+    function total_cal() {
+        var gr_tot = 0;
+        $(".price").each(function() {
+            isNaN(this.value) || 0 == this.value.length || (gr_tot += parseFloat(this.value))
+        });
+        $("#total_price").text(gr_tot);
+    }
+    
+        $(document).on('keyup', '.price', function() {
+        total_cal();
+    });
+
+    // function po_calculation_total(){        
+                
+    //     var sub_total = 0; 
+    //     var vat_total = 0; 
+
+    //     $(".po_price").each(function () {
+    //         sub_total += parseFloat(this.value);       
+    //     });
 
 
+    //     $(".total_vat").each(function () {
+    //         vat_total += parseFloat(this.value);       
+    //     });
 
+    //     $("#po_vat_amount").val(vat_total.toFixed(2));
+    //     $("#po_sub_total").val(sub_total.toFixed(2));
+
+    //     var grand_total = sub_total+vat_total;
+    //     $("#po_grand_total").val(grand_total.toFixed(2));
+    // }
+      </script>
 </body>
 </html>
-
-
-
- 

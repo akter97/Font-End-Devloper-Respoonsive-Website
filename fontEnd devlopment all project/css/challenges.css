@@ -2,10 +2,9 @@
     padding: 0;
     margin: 0;
 }
+ 
 
-
-.navbar-section{
-    position: fixed;
+.navbar-section{ 
     width: 100%;
     background: rgb(255, 255, 255);
     border-bottom: 2px solid rgb(141, 112, 112);
@@ -71,12 +70,16 @@
 
 .navbar-section li a:hover{
 
-    border-bottom: 3px solid red;
-    transform-origin: left;  
+    border-bottom: 3px solid red;  
 
    
 }
+.navbar-section li a.activee{
 
+    border-bottom: 3px solid red; 
+
+   
+}
 
 .logo .logo-typing{
     display: flex;  
@@ -90,93 +93,48 @@
 
     /* header-section */
 
-
-    
-    .header-section::before{
-        content: '';
-        box-sizing: border-box;
-        overflow: hidden; 
-    }
+   
     .header-section{ 
         width: 100%;
-        height: 600px; 
-        box-sizing: border-box;
-        overflow: hidden;
-        background: url('../img/index/header/cover.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        margin-bottom: -50px;   
-        padding-top: 0px; 
-         
+        height: auto;  
+        background: rgb(255, 255, 255);
+        padding: 10px; 
+        position: sticky;
+       top: 0%;
+       z-index: 1;
 
     } 
-    .header-section .hadding{ 
-    width: 100%;
-    height: 100%; 
-    background: linear-gradient(to right, rgba(216, 181, 181, 0.295), rgba(255, 0, 0, 0.5));
-    display: flex;
-    justify-content: center;
-    align-items: center; 
+    .header-section .right{
+        float: right;
+    } 
 
+
+
+
+    .header-section .filter{
+        width: auto;
+        height: 300px; 
+        box-sizing: border-box;
+        overflow: scroll;
+
+    }
+    .header-section .filter a{
+        display: block;
+        padding: 5px;
+        border-bottom: 1px solid red;
+        color: #000;
+
+    }
     
-}
-.header-section .hadding1{ 
-width: 100%;
-height: 100%;  
-display: flex;
-justify-content: center;
-align-items: center; 
+    .header-section .filter label{
+        display: block;
+        padding: 10px;
+        color: rgb(59, 55, 55);
+        border-bottom: 1px solid red;
+        border-top: 1px solid red;
+       
 
-
-}
- 
-.header-section .hadding img{ 
-    width: 100%;
-    height: 100%;
-    
-}
-
-.header-section .hadding h1{ 
-    color: #3E54A3;
-    font-size: 25px;
-    font-weight: 900;
-   
-}
-
-.header-section .hadding p{ 
-    color: #010514;
-    font-size: 20px;
-    font-weight: 500;
-   
-}
-.header-section .hadding h1 span{ 
-     border-bottom: 5px dashed green;
-     line-height: 1.2cm;
-     border-radius: 30%;
-    
-}
-
-.header-section .hadding a{ 
-   text-decoration: none; 
-   border: 3px solid green;
-   width: 200px;
-   margin: 10px auto;
-   height: auto;
-   border-radius: 20%;
-   display: flex;
-   align-items: center;
-    margin-top: 40px;
-   justify-content: center;
-   background: #000;
-   transition: .9s;
-   padding: 10px 0px;
-}
-.header-section .hadding a:hover{ 
-    transform: scale(1.2);
-}
- 
+    }
 /* -------------------------------------- */
 
 
